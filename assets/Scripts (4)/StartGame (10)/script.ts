@@ -4,19 +4,24 @@ class StartGame extends Sup.Behavior {
   countKosOpacity = 0;
   opacityInterval;
   countEnterPressed = 0;
+  initialLevel;
   
   awake() {
+    // get level where the player ended last run
+    this.initialLevel = Sup.Storage.get("level");
+    if (this.initialLevel == "" || this.initialLevel == undefined || this.initialLevel == null) this.initialLevel = "FirstLevel";
+    
     // start music
     this.inGameMusicPlayer.play();
     
     // start showing art
     this.opacityInterval = Sup.setInterval(200, () => {
-      if (this.countKosOpacity <= 5) {        
+      if (this.countKosOpacity <= 5) {
         let currentOpacity = Sup.getActor("Kos").spriteRenderer.getOpacity();
         Sup.getActor("Kos").spriteRenderer.setOpacity(currentOpacity + 0.2);
-        this.countKosOpacity++;        
-      } else {        
-        Sup.clearInterval(this.opacityInterval);        
+        this.countKosOpacity++;
+      } else {
+        Sup.clearInterval(this.opacityInterval);
       }
     })
   }
@@ -32,7 +37,7 @@ class StartGame extends Sup.Behavior {
       } else {
         this.inGameMusicPlayer.stop();
         Sup.clearInterval(this.opacityInterval);
-        Sup.loadScene("Scenes/FirstLevel");
+        Sup.loadScene(`Scenes/${this.initialLevel}`);
       }      
     }
   }

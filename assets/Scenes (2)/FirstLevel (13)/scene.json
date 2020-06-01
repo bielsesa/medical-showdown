@@ -868,7 +868,12 @@
           "type": "Behavior",
           "config": {
             "behaviorName": "PlayerBehavior",
-            "propertyValues": {}
+            "propertyValues": {
+              "currentLevel": {
+                "type": "string",
+                "value": "FirstLevel"
+              }
+            }
           },
           "id": "1"
         },
@@ -995,6 +1000,31 @@
         "z": 1
       },
       "visible": false,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "25",
+      "name": "SpawnPoint",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": 1.3325645923614502,
+        "y": 8.970561027526855,
+        "z": 5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
       "layer": 0,
       "prefab": null
     }

@@ -1,6 +1,6 @@
 class ThirdLevelBehavior extends Sup.Behavior {
   
-  inGameMusicPlayer = new Sup.Audio.SoundPlayer("Sounds/Music/ThirdFourthLevelMusic", 1.0, { loop: true });  
+  inGameMusicPlayer = new Sup.Audio.SoundPlayer("Sounds/Music/ThirdFourthLevelMusic", 0.8, { loop: true });  
   levelWon: boolean = false;
   
   awake() {

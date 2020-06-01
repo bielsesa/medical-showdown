@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 69,
+  "nextEntryId": 72,
   "nodes": [
     {
       "id": "0",
@@ -180,6 +180,21 @@
         {
           "id": "62",
           "name": "SecondLevel",
+          "type": "scene"
+        },
+        {
+          "id": "69",
+          "name": "ThirdLevel",
+          "type": "scene"
+        },
+        {
+          "id": "70",
+          "name": "FourthLevel",
+          "type": "scene"
+        },
+        {
+          "id": "71",
+          "name": "FifthLevel",
           "type": "scene"
         },
         {

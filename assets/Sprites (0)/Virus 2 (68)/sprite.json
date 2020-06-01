@@ -25,6 +25,20 @@
       "startFrameIndex": 0,
       "endFrameIndex": 8,
       "speed": 2
+    },
+    {
+      "id": "1",
+      "name": "hurt",
+      "startFrameIndex": 9,
+      "endFrameIndex": 11,
+      "speed": 2
+    },
+    {
+      "id": "2",
+      "name": "death",
+      "startFrameIndex": 9,
+      "endFrameIndex": 14,
+      "speed": 3
     }
   ],
   "mapSlots": {

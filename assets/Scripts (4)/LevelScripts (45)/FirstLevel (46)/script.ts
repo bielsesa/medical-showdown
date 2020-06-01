@@ -38,8 +38,7 @@ class FirstLevelBehavior extends Sup.Behavior {
     // es comprova si s'ha guanyat el nivell
     // i es pasa al següent
     if (this.levelWon) {
-      this.inGameMusicPlayer.stop();      
-      this.actor.destroy();
+      this.inGameMusicPlayer.stop();   
       Sup.loadScene("Scenes/SecondLevel");
     }
   }

@@ -18,7 +18,6 @@ class SecondLevelBehavior extends Sup.Behavior {
     this.collectibleBodies = [];
     let collectibleActors = Sup.getActor("Collectibles").getChildren();
     for (let collectibleActor of collectibleActors) this.collectibleBodies.push(collectibleActor.arcadeBody2D);
-    Sup.log(`Number of collectibles: ${this.collectibleBodies.length}`);
     
     if (this.collectibleBodies.length == 0) {
       this.levelWon = true;

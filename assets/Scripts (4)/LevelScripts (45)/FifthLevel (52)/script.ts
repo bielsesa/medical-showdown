@@ -1,6 +1,6 @@
 class FifthLevelBehavior extends Sup.Behavior {
   
-  inGameMusicPlayer = new Sup.Audio.SoundPlayer("Sounds/Music/FifthLevelMusic", 1.0, { loop: true });  
+  inGameMusicPlayer = new Sup.Audio.SoundPlayer("Sounds/Music/FifthLevelMusic", 0.8, { loop: true });  
   levelWon: boolean = false;
   
   awake() {

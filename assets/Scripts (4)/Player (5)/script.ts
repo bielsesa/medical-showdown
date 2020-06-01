@@ -8,6 +8,7 @@ class PlayerBehavior extends Sup.Behavior {
   speed = 0.15;
   jumpSpeed = 0.45;
   doubleJumpCount = 0;
+  currentLevel: string;
   
     //////////////////////////
    ///////// STATES /////////
@@ -31,11 +32,14 @@ class PlayerBehavior extends Sup.Behavior {
     let platformActors = Sup.getActor("Platforms").getChildren();
     for (let platformActor of platformActors) this.platformBodies.push(platformActor.arcadeBody2D);
     let enemyActors = Sup.getActor("Enemies").getChildren();
-    for (let enemyActor of enemyActors) this.enemyBodies.push(enemyActor.arcadeBody2D);    
+    for (let enemyActor of enemyActors) this.enemyBodies.push(enemyActor.arcadeBody2D);
+    
+    // Restore saved character position on load
+    let savedPosition = Sup.Storage.getJSON("myCharacterPosition", { x: 0, y: 0 });
+    this.actor.arcadeBody2D.warpPosition(new Sup.Math.Vector3(savedPosition.x, savedPosition.y, 2));
   }
 
-  update() {
-    
+  update() {    
     // First check if the player is within the viewport
     let actorCurrentPosition = this.actor.getPosition();
     let mapSize = {
@@ -217,6 +221,10 @@ class PlayerBehavior extends Sup.Behavior {
     this.paused = paused;
   }
   
+  getCurrentLevel() {
+    return this.currentLevel;
+  }
+  
     ///////////////////////
    /////// METHODS ///////
   ///////////////////////
@@ -241,3 +249,10 @@ class PlayerBehavior extends Sup.Behavior {
   }
 }
 Sup.registerBehavior(PlayerBehavior);
+
+// Save character position on exit
+Sup.Input.on("exit", () => {
+  Sup.Storage.setJSON("myCharacterPosition", { x: Sup.getActor("Player").getX(), y: Sup.getActor("Player").getY() });
+  
+  Sup.Storage.set("level", Sup.getActor("Player").getBehavior(PlayerBehavior).getCurrentLevel());
+});
