@@ -1,0 +1,350 @@
+{
+  "nextEntryId": 69,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Sprites",
+      "type": null,
+      "children": [
+        {
+          "id": "3",
+          "name": "Kos",
+          "type": "sprite"
+        },
+        {
+          "id": "15",
+          "name": "Virus",
+          "type": "sprite"
+        },
+        {
+          "id": "68",
+          "name": "Virus 2",
+          "type": "sprite"
+        },
+        {
+          "id": "16",
+          "name": "Heart",
+          "type": "sprite"
+        },
+        {
+          "id": "17",
+          "name": "Mask",
+          "type": "sprite"
+        },
+        {
+          "id": "20",
+          "name": "Water",
+          "type": "sprite"
+        },
+        {
+          "id": "18",
+          "name": "PainKillers",
+          "type": "sprite"
+        },
+        {
+          "id": "53",
+          "name": "WoodenPlatform",
+          "type": "sprite"
+        },
+        {
+          "id": "55",
+          "name": "MetalPlatform",
+          "type": "sprite"
+        },
+        {
+          "id": "56",
+          "name": "Blast",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Levels",
+      "type": null,
+      "children": [
+        {
+          "id": "21",
+          "name": "FirstLevel",
+          "type": null,
+          "children": [
+            {
+              "id": "29",
+              "name": "FirstLevelMap",
+              "type": "tileMap"
+            },
+            {
+              "id": "54",
+              "name": "FirstLevelBackground",
+              "type": "tileMap"
+            }
+          ]
+        },
+        {
+          "id": "22",
+          "name": "SecondLevel",
+          "type": null,
+          "children": [
+            {
+              "id": "30",
+              "name": "SecondLevelMap",
+              "type": "tileMap"
+            },
+            {
+              "id": "67",
+              "name": "SecondLevelBackground",
+              "type": "tileMap"
+            }
+          ]
+        },
+        {
+          "id": "23",
+          "name": "ThirdLevel",
+          "type": null,
+          "children": [
+            {
+              "id": "31",
+              "name": "ThirdLevelMap",
+              "type": "tileMap"
+            },
+            {
+              "id": "64",
+              "name": "ThirdLevelBackground",
+              "type": "tileMap"
+            }
+          ]
+        },
+        {
+          "id": "24",
+          "name": "FourthLevel",
+          "type": null,
+          "children": [
+            {
+              "id": "63",
+              "name": "FourthLevelMap",
+              "type": "tileMap"
+            },
+            {
+              "id": "65",
+              "name": "FourthLevelBackground",
+              "type": "tileMap"
+            }
+          ]
+        },
+        {
+          "id": "25",
+          "name": "FifthLevel",
+          "type": null,
+          "children": [
+            {
+              "id": "33",
+              "name": "FifthLevelMap",
+              "type": "tileMap"
+            },
+            {
+              "id": "66",
+              "name": "FifthLevelBackground",
+              "type": "tileMap"
+            }
+          ]
+        },
+        {
+          "id": "26",
+          "name": "Tiles",
+          "type": null,
+          "children": [
+            {
+              "id": "27",
+              "name": "Terrain",
+              "type": "tileSet"
+            },
+            {
+              "id": "28",
+              "name": "Background",
+              "type": "tileSet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Scenes",
+      "type": null,
+      "children": [
+        {
+          "id": "13",
+          "name": "FirstLevel",
+          "type": "scene"
+        },
+        {
+          "id": "62",
+          "name": "SecondLevel",
+          "type": "scene"
+        },
+        {
+          "id": "14",
+          "name": "StartScene",
+          "type": "scene"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Scripts",
+      "type": null,
+      "children": [
+        {
+          "id": "5",
+          "name": "Player",
+          "type": "script"
+        },
+        {
+          "id": "60",
+          "name": "HUD",
+          "type": "script"
+        },
+        {
+          "id": "10",
+          "name": "StartGame",
+          "type": "script"
+        },
+        {
+          "id": "6",
+          "name": "Bullet",
+          "type": "script"
+        },
+        {
+          "id": "8",
+          "name": "Collectible",
+          "type": "script"
+        },
+        {
+          "id": "9",
+          "name": "Enemy",
+          "type": "script"
+        },
+        {
+          "id": "45",
+          "name": "LevelScripts",
+          "type": null,
+          "children": [
+            {
+              "id": "46",
+              "name": "FirstLevel",
+              "type": "script"
+            },
+            {
+              "id": "47",
+              "name": "SecondLevel",
+              "type": "script"
+            },
+            {
+              "id": "50",
+              "name": "ThirdLevel",
+              "type": "script"
+            },
+            {
+              "id": "51",
+              "name": "FourthLevel",
+              "type": "script"
+            },
+            {
+              "id": "52",
+              "name": "FifthLevel",
+              "type": "script"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "name": "Graphics",
+      "type": null,
+      "children": [
+        {
+          "id": "35",
+          "name": "Kos-Final-Art",
+          "type": "sprite"
+        },
+        {
+          "id": "57",
+          "name": "MainMenu",
+          "type": "sprite"
+        },
+        {
+          "id": "58",
+          "name": "InstructionsMainMenu",
+          "type": "sprite"
+        },
+        {
+          "id": "59",
+          "name": "InstructionsPauseMenu",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "name": "Sounds",
+      "type": null,
+      "children": [
+        {
+          "id": "37",
+          "name": "Music",
+          "type": null,
+          "children": [
+            {
+              "id": "39",
+              "name": "FirstSecondLevelMusic",
+              "type": "sound"
+            },
+            {
+              "id": "48",
+              "name": "ThirdFourthLevelMusic",
+              "type": "sound"
+            },
+            {
+              "id": "49",
+              "name": "FifthLevelMusic",
+              "type": "sound"
+            },
+            {
+              "id": "43",
+              "name": "MainMenuMusic",
+              "type": "sound"
+            }
+          ]
+        },
+        {
+          "id": "38",
+          "name": "FX",
+          "type": null,
+          "children": [
+            {
+              "id": "40",
+              "name": "Death",
+              "type": "sound"
+            },
+            {
+              "id": "41",
+              "name": "Hurt",
+              "type": "sound"
+            },
+            {
+              "id": "42",
+              "name": "Shoot",
+              "type": "sound"
+            },
+            {
+              "id": "61",
+              "name": "CollectItem",
+              "type": "sound"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

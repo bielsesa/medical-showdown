@@ -1,0 +1,167 @@
+{
+  "behaviors": {
+    "PlayerBehavior": {
+      "scriptId": "5",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "maxLives",
+          "type": "number"
+        },
+        {
+          "name": "life",
+          "type": "number"
+        },
+        {
+          "name": "speed",
+          "type": "number"
+        },
+        {
+          "name": "jumpSpeed",
+          "type": "number"
+        },
+        {
+          "name": "doubleJumpCount",
+          "type": "number"
+        },
+        {
+          "name": "hurt",
+          "type": "boolean"
+        },
+        {
+          "name": "attacking",
+          "type": "boolean"
+        },
+        {
+          "name": "doubleJump",
+          "type": "boolean"
+        },
+        {
+          "name": "paused",
+          "type": "boolean"
+        }
+      ]
+    },
+    "BulletBehavior": {
+      "scriptId": "6",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "mapSize",
+          "type": "any"
+        }
+      ]
+    },
+    "CollectibleBehavior": {
+      "scriptId": "8",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "EnemyBehavior": {
+      "scriptId": "9",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "StartGame": {
+      "scriptId": "10",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "countKosOpacity",
+          "type": "number"
+        },
+        {
+          "name": "opacityInterval",
+          "type": "any"
+        },
+        {
+          "name": "countEnterPressed",
+          "type": "number"
+        }
+      ]
+    },
+    "FirstLevelBehavior": {
+      "scriptId": "46",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "levelWon",
+          "type": "boolean"
+        },
+        {
+          "name": "pauseMenu",
+          "type": "boolean"
+        }
+      ]
+    },
+    "SecondLevelBehavior": {
+      "scriptId": "47",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "levelWon",
+          "type": "boolean"
+        },
+        {
+          "name": "pauseMenu",
+          "type": "boolean"
+        }
+      ]
+    },
+    "ThirdLevelBehavior": {
+      "scriptId": "50",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "levelWon",
+          "type": "boolean"
+        }
+      ]
+    },
+    "FourthLevelBehavior": {
+      "scriptId": "51",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "levelWon",
+          "type": "boolean"
+        }
+      ]
+    },
+    "FifthLevelBehavior": {
+      "scriptId": "52",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "levelWon",
+          "type": "boolean"
+        }
+      ]
+    },
+    "HUDBehavior": {
+      "scriptId": "60",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "originalPosition",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "numberOfLifes",
+          "type": "number"
+        }
+      ]
+    }
+  }
+}
